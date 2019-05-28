@@ -1,0 +1,9 @@
+.settings
+.project
+target/
+logs/
+*.iml
+.iml*
+.idea
+.idea*
+*.pyc
