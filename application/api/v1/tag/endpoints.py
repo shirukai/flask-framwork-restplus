@@ -16,7 +16,7 @@ from application.api.v1.serializers import tag, tag_post, tag_blogs
 ns = api.namespace('tag', description='Operations related to v1 tag.')
 
 
-@ns.route('/')
+@ns.route('')
 class TagCollection(Resource):
     @api.marshal_list_with(tag)
     def get(self):

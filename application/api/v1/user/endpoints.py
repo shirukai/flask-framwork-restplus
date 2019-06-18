@@ -15,7 +15,7 @@ from application.api.v1.serializers import user, user_post, user_blogs
 ns = api.namespace('user', description='Operations related to v1 user.')
 
 
-@ns.route('/')
+@ns.route('')
 class UserCollection(Resource):
     @api.marshal_list_with(user)
     def get(self):

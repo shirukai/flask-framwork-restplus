@@ -15,7 +15,7 @@ from application.api.v1.blog import business
 ns = api.namespace('blog', description='Operations related to v1 blog.')
 
 
-@ns.route("/")
+@ns.route("")
 class BlogCollection(Resource):
     @api.marshal_list_with(blog)
     def get(self):
